@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="grid grid-cols-1 lg:grid-cols-[500px_1fr] gap-8 w-full max-w-[1500px]">
 
                 {/* LEFT PANEL */}
-                <div className="flex h-full items-start justify-center mt-22">
+                <div className="flex flex-col h-full items-center justify-start mt-22 gap-8">
                     <ProfileCard />
                 </div>
 

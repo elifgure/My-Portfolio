@@ -1,5 +1,5 @@
 
-import { Inbox } from "lucide-react";
+import { Inbox, Download, Linkedin, Github } from "lucide-react";
 import Image from "next/image";
 
 export default function ProfileCard() {
@@ -7,7 +7,7 @@ export default function ProfileCard() {
     <div className="flex gap-4 lg:gap-8 items-start h-auto lg:h-[680px]">
       {/* Sidebar Navigation */}
       <div className="hidden lg:flex flex-col justify-center py-18 h-full gap-16 text-gray-500 font-medium text-sm -mx-6">
-        <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Technologies</div>
+        <a href="#technologies" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Technologies</a>
         <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Projects</div>
         <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Commits</div>
         <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Contact</div>
@@ -65,7 +65,24 @@ export default function ProfileCard() {
               <Inbox className="w-4 h-4" />
             </a>
           </div>
+        </div>
 
+        {/* CV and Socials (Below Profile Card) */}
+        <div className="flex flex-col items-center gap-4 w-full mt-6">
+          <button className="w-full bg-[#0f131b] text-white h-[60px] rounded-[30px] flex items-center justify-center gap-3 font-medium text-xl hover:bg-black/80 transition-colors">
+            Download CV
+            <div className="bg-white/20 p-2 rounded-full">
+              <Download className="w-5 h-5" />
+            </div>
+          </button>
+
+          {/* <div className="flex gap-4">
+            <a href="#" className="w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center border border-black/10 hover:scale-105 transition-transform">
+            </a>
+            <a href="#" className="w-[60px] h-[60px] bg-black text-white rounded-full flex items-center justify-center hover:scale-105 transition-transform">
+              <Github className="w-6 h-6" />
+            </a>
+          </div> */}
         </div>
       </div>
     </div>
