@@ -78,7 +78,7 @@ export default function Hero() {
                                 <ArrowUpRight className="w-6 h-6 text-black/60" />
                             </div>
                             <div>
-                                <h2 className="text-5xl font-bold text-black tracking-tight">18+</h2>
+                                <h2 className="text-5xl font-bold text-black tracking-tight">10</h2>
                                 <p className="text-black/70 font-medium text-lg pt-1">Technologies</p>
                                 <p className="text-sm text-black/50 mt-2 font-medium">Full Stack</p>
                             </div>

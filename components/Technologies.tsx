@@ -56,7 +56,7 @@ const technologies = [
 
 export default function Technologies() {
     return (
-        <section id="technologies" className="min-h-screen bg-[#ffe9c6] py-20 px-4 lg:px-8 font-sans">
+        <section id="technologies" className="min-h-screen bg-[#f5f0ff] py-20 px-4 lg:px-8 font-sans">
             <div className="max-w-[1500px] mx-auto">
                 <h2 className="text-6xl font-black tracking-tighter text-black mb-16 text-center">
                     Technologies<span className="text-[#7E83D4]">.</span>
@@ -64,7 +64,7 @@ export default function Technologies() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     {technologies.map((tech) => (
-                        <div key={tech.name} className="bg-[#f6f5f3] rounded-[32px] p-8 flex flex-col gap-6 hover:scale-[1.02] transition-transform duration-300 shadow-md hover:shadow-md">
+                        <div key={tech.name} className="bg-[#f5f1fe] border-0.5 border-black/20 rounded-[32px] p-8 flex flex-col gap-6 hover:scale-[1.02] transition-transform duration-300 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)]">
                             <div className="w-16 h-16 relative">
                                 <Image
                                     src={tech.icon}

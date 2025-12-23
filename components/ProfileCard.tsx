@@ -8,9 +8,9 @@ export default function ProfileCard() {
       {/* Sidebar Navigation */}
       <div className="hidden lg:flex flex-col justify-center py-18 h-full gap-16 text-gray-500 font-medium text-sm -mx-6">
         <a href="#technologies" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Technologies</a>
-        <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Projects</div>
-        <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Commits</div>
-        <div className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Contact</div>
+        <a href="#projects" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Projects</a>
+        <a href="#commits" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Commits</a>
+        <a href="#contact" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Contact</a>
       </div>
 
       {/* Main Card Wrapper */}
