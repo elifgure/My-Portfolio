@@ -3,6 +3,7 @@ import ProjectsSection from "@/components/Projects Section";
 import Stats from "@/components/Stats";
 import Technologies from "@/components/Technologies";
 import Tools from "@/components/Tools";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Technologies />
       <Tools />
       <ProjectsSection />
+      <Contact />
       <Stats />
     </main>
   );

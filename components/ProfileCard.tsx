@@ -9,7 +9,7 @@ export default function ProfileCard() {
       <div className="hidden lg:flex flex-col justify-center py-18 h-full gap-16 text-gray-500 font-medium text-sm -mx-6">
         <a href="#technologies" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Technologies</a>
         <a href="#projects" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Projects</a>
-        <a href="#commits" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Commits</a>
+        <a href="#tools" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Tools</a>
         <a href="#contact" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Contact</a>
       </div>
 
