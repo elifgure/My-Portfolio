@@ -3,15 +3,15 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section id="contact" className="min-h-screen bg-[#fff0f5] py-20 px-4 lg:px-8 font-sans flex items-center justify-center">
+        <section id="contact" className="min-h-screen bg-[#fff0f5] py-12 lg:py-20 px-4 lg:px-8 font-sans flex items-center justify-center">
             <div className="max-w-[1200px] w-full mx-auto">
-                <div className="flex flex-col items-center gap-16">
+                <div className="flex flex-col items-center gap-10 lg:gap-16">
                     {/* Header */}
                     <div className="text-center">
-                        <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-black mb-6">
+                        <h2 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-black mb-4 lg:mb-6">
                             Lets Talk<span className="text-[#ff6b6b]">.</span>
                         </h2>
-                        <p className="text-xl md:text-2xl text-gray-600 font-medium max-w-2xl mx-auto">
+                        <p className="text-lg md:text-2xl text-gray-600 font-medium max-w-2xl mx-auto">
                             Got a project in mind? Lets turn your ideas into reality.
                         </p>
                     </div>

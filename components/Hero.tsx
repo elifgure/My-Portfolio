@@ -4,7 +4,7 @@ import ProfileCard from "./ProfileCard";
 
 export default function Hero() {
     return (
-        <section className="min-h-screen bg-[#F3F4F6] flex justify-center p-4 lg:p-8 font-sans">
+        <section className="py-16 bg-[#F3F4F6] flex justify-center p-4 lg:p-8 font-sans">
             <div className="grid grid-cols-1 lg:grid-cols-[500px_1fr] gap-8 w-full max-w-[1500px]">
 
                 {/* LEFT PANEL */}
@@ -16,15 +16,17 @@ export default function Hero() {
                 <div className="flex flex-col gap-8 pt-4">
 
                     {/* HEADER */}
-                    <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-black">
+                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-black">
                         Software Developer<span className="text-[#7E83D4]">.</span>
                     </h1>
-
+                    <p className="text-lg text-black">
+                        I build modern, responsive web applications using React, Node.js, Next.js and Tailwind CSS.
+                    </p>
                     {/* BENTO GRID */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
 
                         {/* FEATURED CARD (Large) */}
-                        <div className="md:row-span-2 relative h-[320px] md:h-full min-h-[320px] rounded-[32px] overflow-hidden bg-white shadow-sm group">
+                        <div className="md:row-span-2 relative h-[380px] min-h-[260px] rounded-[32px] overflow-hidden bg-white shadow-sm group">
                             <Image
                                 src="/images/project-cover.png"
                                 alt="Featured Project"
@@ -45,7 +47,7 @@ export default function Hero() {
                         </div>
 
                         {/* PROJECTS CARD (Green) */}
-                        <div className="bg-[#B8EAD9] rounded-[32px] p-8 flex flex-col justify-between h-[240px] relative hover:rotate-1 transition-transform duration-300">
+                        <div className="bg-[#B8EAD9] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:rotate-1 transition-transform duration-300">
                             <div className="absolute top-6 right-6">
                                 <ArrowUpRight className="w-6 h-6 text-black/60" />
                             </div>
@@ -59,7 +61,7 @@ export default function Hero() {
                         </div>
 
                         {/* COMMITS CARD (Purple) */}
-                        <div className="bg-[#9F83D4] rounded-[32px] p-8 flex flex-col justify-between h-[240px] relative hover:-rotate-1 transition-transform duration-300">
+                        <div className="bg-[#9F83D4] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:-rotate-1 transition-transform duration-300">
                             <div className="absolute top-6 right-6">
                                 <ArrowUpRight className="w-6 h-6 text-white/60" />
                             </div>
@@ -73,7 +75,7 @@ export default function Hero() {
                         </div>
 
                         {/* TECHNOLOGIES CARD (Orange/Yellow) */}
-                        <div className="bg-[#FFC975] rounded-[32px] p-8 flex flex-col justify-between h-[240px] relative hover:rotate-1 transition-transform duration-300">
+                        <div className="bg-[#FFC975] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:rotate-1 transition-transform duration-300">
                             <div className="absolute top-6 right-6">
                                 <ArrowUpRight className="w-6 h-6 text-black/60" />
                             </div>
@@ -92,7 +94,7 @@ export default function Hero() {
                         </div>
 
                         {/* TOOLS CARD (Blue) */}
-                        <div className="bg-[#A0C4FF] rounded-[32px] p-8 flex flex-col justify-between h-[240px] relative hover:-rotate-1 transition-transform duration-300">
+                        <div className="bg-[#A0C4FF] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:-rotate-1 transition-transform duration-300">
                             <div className="absolute top-6 right-6">
                                 <ArrowUpRight className="w-6 h-6 text-black/60" />
                             </div>

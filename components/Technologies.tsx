@@ -4,17 +4,17 @@ import Image from "next/image";
 const technologies = [
     {
         name: "HTML",
-        icon: "/images/icons/html.png",
+        icon: "/images/icons/htmlll.png",
         description: "Standard markup language for Web pages."
     },
     {
         name: "CSS",
-        icon: "/images/icons/css.webp",
+        icon: "/images/icons/csss.png",
         description: "Style sheet language for web presentation."
     },
     {
         name: "JavaScript",
-        icon: "/images/icons/js.jpg",
+        icon: "/images/icons/js.png",
         description: "High-level, interpreted programming language."
     },
     {
@@ -24,22 +24,22 @@ const technologies = [
     },
     {
         name: "React",
-        icon: "/images/icons/react.png",
+        icon: "/images/icons/reactt.png",
         description: "JavaScript library for building user interfaces."
     },
     {
         name: "Next.js",
-        icon: "/images/icons/nextjs.jpg",
+        icon: "/images/icons/nextjs.png",
         description: "The React Framework for Production."
     },
     {
         name: "Tailwind CSS",
-        icon: "/images/icons/tailwind.png",
+        icon: "/images/icons/tailwindcss.png",
         description: "Utility-first CSS framework."
     },
     {
         name: "Node.js",
-        icon: "/images/icons/nodejs.png",
+        icon: "/images/icons/nodejs.svg",
         description: "JavaScript runtime built on Chrome's V8."
     },
     {
@@ -49,16 +49,16 @@ const technologies = [
     },
     {
         name: "Firebase",
-        icon: "/images/icons/firebase.png",
+        icon: "/images/icons/firebasee.png",
         description: "Platform for developing web and mobile apps."
     }
 ];
 
 export default function Technologies() {
     return (
-        <section id="technologies" className="min-h-screen bg-[#f5f0ff] py-20 px-4 lg:px-8 font-sans">
+        <section id="technologies" className="min-h-screen bg-[#f5f0ff] py-12 lg:py-20 px-4 lg:px-8 font-sans">
             <div className="max-w-[1500px] mx-auto">
-                <h2 className="text-6xl font-black tracking-tighter text-black mb-16 text-center">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-10 lg:mb-16 text-center">
                     Technologies<span className="text-[#7E83D4]">.</span>
                 </h2>
 

@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
     return (
-        <section id="projects" className="min-h-screen bg-[#eff5f3] py-20 px-4 lg:px-8 font-sans">
+        <section id="projects" className="min-h-screen bg-[#eff5f3] py-12 lg:py-20 px-4 lg:px-8 font-sans">
             <div className="max-w-[1500px] mx-auto">
-                <h2 className="text-6xl font-black tracking-tighter text-black mb-16 text-center">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-10 lg:mb-16 text-center">
                     Projects<span className="text-[#9F83D4]">.</span>
                 </h2>
 

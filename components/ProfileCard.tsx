@@ -4,13 +4,22 @@ import Image from "next/image";
 
 export default function ProfileCard() {
   return (
-    <div className="flex gap-4 lg:gap-8 items-start h-auto lg:h-[680px]">
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start h-auto lg:h-[680px]">
       {/* Sidebar Navigation */}
+      {/* Sidebar Navigation - Desktop */}
       <div className="hidden lg:flex flex-col justify-center py-18 h-full gap-16 text-gray-500 font-medium text-sm -mx-6">
         <a href="#technologies" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Technologies</a>
         <a href="#projects" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Projects</a>
         <a href="#tools" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Tools</a>
         <a href="#contact" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Contact</a>
+      </div>
+
+      {/* Mobile Navigation */}
+      <div className="flex lg:hidden overflow-x-auto gap-6 pb-4 w-full">
+        <a href="#technologies" className="text-sm font-medium text-gray-500 hover:text-black whitespace-nowrap">Technologies</a>
+        <a href="#projects" className="text-sm font-medium text-gray-500 hover:text-black whitespace-nowrap">Projects</a>
+        <a href="#tools" className="text-sm font-medium text-gray-500 hover:text-black whitespace-nowrap">Tools</a>
+        <a href="#contact" className="text-sm font-medium text-gray-500 hover:text-black whitespace-nowrap">Contact</a>
       </div>
 
       {/* Main Card Wrapper */}
@@ -29,7 +38,7 @@ export default function ProfileCard() {
         </div>
 
         {/* Purple Card */}
-        <div className="w-full h-full min-h-[640px] bg-[#7E83D4] rounded-[56px] rounded-tl-[160px] overflow-hidden relative pt-20 px-12 pb-14 flex flex-col shadow-2xl mt-8">
+        <div className="w-full h-full min-h-[500px] lg:min-h-[640px] bg-[#7E83D4] rounded-[40px] lg:rounded-[56px] lg:rounded-tl-[160px] overflow-hidden relative pt-12 lg:pt-20 px-8 lg:px-12 pb-10 lg:pb-14 flex flex-col shadow-2xl mt-4 lg:mt-8">
 
           {/* Profile Image Section */}
           <div className="relative flex justify-center items-center mt-2">
@@ -51,8 +60,8 @@ export default function ProfileCard() {
 
           {/* Text Content */}
           <div className="relative z-20 mt-8">
-            <p className="text-4xl font-light text-white">Im,</p>
-            <h1 className="text-6xl font-bold text-white leading-snug tracking-tighter mt-1">
+            <p className="text-2xl lg:text-4xl font-light text-white">Im,</p>
+            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-snug tracking-tighter mt-1">
               <span className="block">Elif</span>
               <span className="block pl-6">Güre</span>
             </h1>

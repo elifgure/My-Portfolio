@@ -4,7 +4,7 @@ import Image from "next/image";
 const tools = [
     {
         name: "Visual Studio Code",
-        icon: "/images/tools/vscode.jpg",
+        icon: "/images/tools/vscodee.png",
         description: "Code editor"
     },
     {
@@ -14,17 +14,17 @@ const tools = [
     },
     {
         name: "Github Copilot",
-        icon: "/images/tools/github copilot.png",
+        icon: "/images/tools/githubcopilot.png",
         description: "AI-powered editor"
     },
     {
         name: "Antigravity",
-        icon: "/images/tools/antigravity.jpg",
+        icon: "/images/tools/antigravity.png",
         description: "AI-powered editor"
     },
     {
         name: "ChatGPT",
-        icon: "/images/tools/chatgpt.png",
+        icon: "/images/tools/chtgpt.png",
         description: "AI assistant"
     },
     {
@@ -56,9 +56,9 @@ const tools = [
 
 export default function Tools() {
     return (
-        <section id="tools" className="min-h-screen bg-[#e0ecff] py-20 px-4 lg:px-8 font-sans">
+        <section id="tools" className="min-h-screen bg-[#e0ecff] py-12 lg:py-20 px-4 lg:px-8 font-sans">
             <div className="max-w-[1500px] mx-auto">
-                <h2 className="text-6xl font-black tracking-tighter text-black mb-16 text-center">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-10 lg:mb-16 text-center">
                     Tools<span className="text-[#7E83D4]">.</span>
                 </h2>
 

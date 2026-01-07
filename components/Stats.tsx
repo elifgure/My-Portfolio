@@ -3,7 +3,7 @@ import { techs } from "@/data/techs";
 
 export default function Stats() {
   return (
-    <section className="grid grid-cols-3 gap-8 text-center py-16">
+    <section className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center py-16">
       <div>
         <h2 className="text-4xl font-bold">{projects.length}+</h2>
         <p className="text-muted-foreground">Projects</p>
