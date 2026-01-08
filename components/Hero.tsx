@@ -4,29 +4,29 @@ import ProfileCard from "./ProfileCard";
 
 export default function Hero() {
     return (
-        <section className="py-16 bg-[#F3F4F6] flex justify-center p-4 lg:p-8 font-sans">
-            <div className="grid grid-cols-1 lg:grid-cols-[500px_1fr] gap-8 w-full max-w-[1500px]">
+        <section className="py-12 bg-[#F3F4F6] flex justify-center p-4 lg:p-6 font-sans">
+            <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6 w-full max-w-[1280px]">
 
                 {/* LEFT PANEL */}
-                <div className="flex flex-col h-full items-center justify-start mt-22 gap-8">
+                <div className="flex flex-col h-full items-center justify-start mt-16 gap-6">
                     <ProfileCard />
                 </div>
 
                 {/* RIGHT PANEL - BENTO GRID */}
-                <div className="flex flex-col gap-8 pt-4">
+                <div className="flex flex-col gap-6 pt-2">
 
                     {/* HEADER */}
-                    <h1 className="text-4xl md:text-6xl lg:text-8xl font-black tracking-tighter text-black">
+                    <h1 className="text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter text-black">
                         Software Developer<span className="text-[#7E83D4]">.</span>
                     </h1>
-                    <p className="text-lg text-black">
+                    <p className="text-base text-black">
                         I build modern, responsive web applications using React, Node.js, Next.js and Tailwind CSS.
                     </p>
                     {/* BENTO GRID */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-4xl">
 
                         {/* FEATURED CARD (Large) */}
-                        <div className="md:row-span-2 relative h-[380px] min-h-[260px] rounded-[32px] overflow-hidden bg-white shadow-sm group">
+                        <div className="md:row-span-2 relative h-[320px] min-h-[220px] rounded-[24px] overflow-hidden bg-white shadow-sm group">
                             <Image
                                 src="/images/project-cover.png"
                                 alt="Featured Project"
@@ -40,70 +40,65 @@ export default function Hero() {
                                 <ArrowUpRight strokeWidth={2.5} />
                             </div>
 
-                            <div className="absolute bottom-8 left-8 text-black/80 text-white">
-                                <p className="font-medium text-lg">Featured Project</p>
-                                <h3 className="text-3xl font-bold leading-tight">QR Menu <br /> System</h3>
+                            <div className="absolute bottom-6 left-6 text-black/80 text-white">
+                                <p className="font-medium text-base">Featured Project</p>
+                                <h3 className="text-2xl font-bold leading-tight">QR Menu <br /> System</h3>
                             </div>
                         </div>
 
                         {/* PROJECTS CARD (Green) */}
-                        <div className="bg-[#B8EAD9] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:rotate-1 transition-transform duration-300">
-                            <div className="absolute top-6 right-6">
-                                <ArrowUpRight className="w-6 h-6 text-black/60" />
+                        <div className="bg-[#B8EAD9] rounded-[24px] p-6 flex flex-col justify-between h-[150px] relative hover:rotate-1 transition-transform duration-300">
+                            <div className="absolute top-5 right-5">
+                                <ArrowUpRight className="w-5 h-5 text-black/60" />
                             </div>
-                            <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center">
-                                <Palette className="w-6 h-6 text-black/70" />
+                            <div className="w-10 h-10 bg-black/5 rounded-full flex items-center justify-center">
+                                <Palette className="w-5 h-5 text-black/70" />
                             </div>
                             <div>
-                                <h2 className="text-5xl font-bold text-black tracking-tight">10</h2>
-                                <p className="text-black/70 font-medium text-lg pt-1">Projects</p>
+                                <h2 className="text-4xl font-bold text-black tracking-tight">10</h2>
+                                <p className="text-black/70 font-medium text-base pt-1">Projects</p>
                             </div>
                         </div>
 
                         {/* COMMITS CARD (Purple) */}
-                        <div className="bg-[#9F83D4] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:-rotate-1 transition-transform duration-300">
-                            <div className="absolute top-6 right-6">
-                                <ArrowUpRight className="w-6 h-6 text-white/60" />
+                        <div className="bg-[#9F83D4] rounded-[24px] p-6 flex flex-col justify-between h-[150px] relative hover:-rotate-1 transition-transform duration-300">
+                            <div className="absolute top-5 right-5">
+                                <ArrowUpRight className="w-5 h-5 text-white/60" />
                             </div>
-                            <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
-                                <Github className="w-6 h-6 text-white" />
+                            <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
+                                <Github className="w-5 h-5 text-white" />
                             </div>
                             <div>
-                                <h2 className="text-5xl font-bold text-white tracking-tight">200</h2>
-                                <p className="text-white/80 font-medium text-lg pt-1">Commits</p>
+                                <h2 className="text-4xl font-bold text-white tracking-tight">200</h2>
+                                <p className="text-white/80 font-medium text-base pt-1">Commits</p>
                             </div>
                         </div>
 
                         {/* TECHNOLOGIES CARD (Orange/Yellow) */}
-                        <div className="bg-[#FFC975] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:rotate-1 transition-transform duration-300">
-                            <div className="absolute top-6 right-6">
-                                <ArrowUpRight className="w-6 h-6 text-black/60" />
+                        <div className="bg-[#FFC975] rounded-[24px] p-6 flex flex-col justify-between h-[150px] relative hover:rotate-1 transition-transform duration-300">
+                            <div className="absolute top-5 right-5">
+                                <ArrowUpRight className="w-5 h-5 text-black/60" />
                             </div>
                             <div>
-                                <h2 className="text-5xl font-bold text-black tracking-tight">10</h2>
-                                <p className="text-black/70 font-medium text-lg pt-1">Technologies</p>
-                                <p className="text-sm text-black/50 mt-2 font-medium">Full Stack</p>
+                                <h2 className="text-4xl font-bold text-black tracking-tight">10</h2>
+                                <p className="text-black/70 font-medium text-base pt-1">Technologies</p>
+                                <p className="text-xs text-black/50 mt-1 font-medium">Full Stack</p>
                             </div>
 
-                            {/* Small Pill Tags */}
-                            <div className="flex gap-2 mt-auto overflow-hidden">
-                                <span className="px-3 py-1 bg-white/30 rounded-full text-xs font-semibold text-black/70">React</span>
-                                <span className="px-3 py-1 bg-white/30 rounded-full text-xs font-semibold text-black/70">Next.js</span>
-                                <span className="px-3 py-1 bg-white/30 rounded-full text-xs font-semibold text-black/70">TS</span>
-                            </div>
+                           
                         </div>
 
                         {/* TOOLS CARD (Blue) */}
-                        <div className="bg-[#A0C4FF] rounded-[32px] p-8 flex flex-col justify-between h-[200px] relative hover:-rotate-1 transition-transform duration-300">
-                            <div className="absolute top-6 right-6">
-                                <ArrowUpRight className="w-6 h-6 text-black/60" />
+                        <div className="bg-[#A0C4FF] rounded-[24px] p-6 flex flex-col justify-between h-[150px] relative hover:-rotate-1 transition-transform duration-300">
+                            <div className="absolute top-5 right-5">
+                                <ArrowUpRight className="w-5 h-5 text-black/60" />
                             </div>
-                            <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center">
-                                <Wrench className="w-6 h-6 text-black/70" />
+                            <div className="w-10 h-10 bg-black/5 rounded-full flex items-center justify-center">
+                                <Wrench className="w-5 h-5 text-black/70" />
                             </div>
                             <div>
-                                <h2 className="text-5xl font-bold text-black tracking-tight">10</h2>
-                                <p className="text-black/70 font-medium text-lg pt-1">Tools</p>
+                                <h2 className="text-4xl font-bold text-black tracking-tight">10</h2>
+                                <p className="text-black/70 font-medium text-base pt-1">Tools</p>
                             </div>
                         </div>
 

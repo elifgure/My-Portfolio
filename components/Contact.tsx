@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <section id="contact" className="min-h-screen bg-[#fff0f5] py-12 lg:py-20 px-4 lg:px-8 font-sans flex items-center justify-center">
-            <div className="max-w-[1200px] w-full mx-auto">
+        <section id="contact" className="min-h-screen bg-[#fff0f5] py-12 lg:py-20 px-4 lg:px-6 font-sans flex items-center justify-center">
+            <div className="max-w-[1280px] w-full mx-auto">
                 <div className="flex flex-col items-center gap-10 lg:gap-16">
                     {/* Header */}
                     <div className="text-center">

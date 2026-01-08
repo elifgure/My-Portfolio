@@ -4,35 +4,34 @@ import Image from "next/image";
 
 export default function ProfileCard() {
   return (
-    <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start h-auto lg:h-[680px]">
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start h-auto">
       {/* Sidebar Navigation */}
       {/* Sidebar Navigation - Desktop */}
-<div className="
-  hidden lg:flex
-  fixed
-  left-6
-  top-1/2
-  -translate-y-1/2
-  flex-col
-  gap-16
-  text-gray-500
-  font-medium
-  text-sm
-  z-50
-">
-  <a href="#technologies" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
-    Technologies
-  </a>
-  <a href="#projects" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
-    Projects
-  </a>
-  <a href="#tools" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
-    Tools
-  </a>
-  <a href="#contact" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
-    Contact
-  </a>
-</div>
+      <div className="
+        hidden lg:flex
+        flex-col
+        justify-center
+        h-full
+        gap-16
+        text-gray-500
+        font-medium
+        text-sm
+        w-8
+        items-center
+      ">
+        <a href="#technologies" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+          Technologies
+        </a>
+        <a href="#projects" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+          Projects
+        </a>
+        <a href="#tools" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+          Tools
+        </a>
+        <a href="#contact" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+          Contact
+        </a>
+      </div>
 
 
       {/* Mobile Navigation */}
@@ -59,16 +58,16 @@ export default function ProfileCard() {
         </div>
 
         {/* Purple Card */}
-        <div className="w-full h-full min-h-[500px] lg:min-h-[640px] bg-[#7E83D4] rounded-[40px] lg:rounded-[56px] lg:rounded-tl-[160px] overflow-hidden relative pt-12 lg:pt-20 px-8 lg:px-12 pb-10 lg:pb-14 flex flex-col shadow-2xl mt-4 lg:mt-8">
+        <div className="w-full h-full min-h-[400px] lg:min-h-[500px] bg-[#7E83D4] rounded-[32px] lg:rounded-[42px] lg:rounded-tl-[100px] overflow-hidden relative pt-8 lg:pt-12 px-6 lg:px-8 pb-6 lg:pb-8 flex flex-col shadow-2xl mt-4 lg:mt-6">
 
           {/* Profile Image Section */}
           <div className="relative flex justify-center items-center mt-2">
             {/* Pink Back Circle */}
-            <div className="absolute w-[280px] h-[280px] bg-[#E0B0FF] rounded-full top-2 left-1/2 -translate-x-1/2"></div>
+            <div className="absolute w-[200px] h-[200px] bg-[#E0B0FF] rounded-full top-2 left-1/2 -translate-x-1/2"></div>
 
             {/* White Ring & Image */}
-            <div className="relative z-10 w-[260px] h-[260px] rounded-full border-[6px] top-2 border-white flex items-center justify-center bg-transparent">
-              <div className="w-[230px] h-[230px] rounded-full overflow-hidden relative bg-gray-200">
+            <div className="relative z-10 w-[180px] h-[180px] rounded-full border-[5px] top-2 border-white flex items-center justify-center bg-transparent">
+              <div className="w-[160px] h-[160px] rounded-full overflow-hidden relative bg-gray-200">
                 <Image
                   src="/images/profile.svg"
                   alt="Profile"
@@ -80,26 +79,35 @@ export default function ProfileCard() {
           </div>
 
           {/* Text Content */}
-          <div className="relative z-20 mt-8">
-            <p className="text-2xl lg:text-4xl font-light text-white">I'm,</p>
-            <h1 className="text-4xl lg:text-6xl font-bold text-white leading-snug tracking-tighter mt-1">
+          <div className="relative z-20 mt-10">
+            <p className="text-xl lg:text-2xl font-light text-white">I'm,</p>
+            <h1 className="text-3xl lg:text-5xl font-bold text-white leading-snug tracking-tighter mt-1">
               <span className="block">Elif</span>
               <span className="block pl-6">Güre</span>
             </h1>
           </div>
 
           {/* Footer Content */}
-          <div className="flex justify-between items-end mt-auto">
-            <a href="mailto:elif@example.com" className="flex items-center gap-2 text-white/90 text-lg hover:underline hover:text-white transition-colors pb-2">
+          <div className="flex flex-col mt-auto gap-4">
+            <a href="mailto:elif.gure121@gmail.com" className="flex items-center gap-2 text-white/90 text-base hover:underline hover:text-white transition-colors">
               elif.gure121@gmail.com
               <Inbox className="w-4 h-4" />
             </a>
+            
+            <div className="flex gap-3">
+               <a href="https://github.com/elifgure" target="_blank" rel="noopener noreferrer" className="p-2 border border-white/20 rounded-full hover:bg-white/10 transition-colors text-white">
+                  <Github className="w-5 h-5" />
+               </a>
+               <a href="https://www.linkedin.com/in/elif-g%C3%BCre-3b34111b0/" target="_blank" rel="noopener noreferrer" className="p-2 border border-white/20 rounded-full hover:bg-white/10 transition-colors text-white">
+                  <Linkedin className="w-5 h-5" />
+               </a>
+            </div>
           </div>
         </div>
 
         {/* CV and Socials (Below Profile Card) */}
         <div className="flex flex-col items-center gap-4 w-full mt-6">
-          <a href="/cv/ElifGure_CV.pdf" className="w-full bg-[#0f131b] text-white h-[60px] rounded-[30px] flex items-center justify-center gap-3 font-medium text-xl hover:bg-black/80 transition-colors">
+          <a href="/cv/ElifGure_CV.pdf" className="w-full bg-[#0f131b] text-white h-[50px] rounded-[25px] flex items-center justify-center gap-3 font-medium text-lg hover:bg-black/70 transition-colors">
             Download CV
             <div className="bg-white/20 p-2 rounded-full">
               <Download className="w-5 h-5" />
