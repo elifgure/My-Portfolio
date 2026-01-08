@@ -3,6 +3,42 @@ import Image from "next/image";
 
 const technologies = [
     {
+        name: "React",
+        icon: "/images/icons/reactt.png",
+        description: "JavaScript library for building user interfaces."
+    },
+    {
+        name: "Node.js",
+        icon: "/images/icons/nodejs.svg",
+        description: "JavaScript runtime built on Chrome's V8."
+    },
+    {
+        name: "TypeScript",
+        icon: "/images/icons/Typescript_logo_2020.svg.png",
+        description: "Strongly typed superset of JavaScript."
+    },    
+    {
+        name: "Next.js",
+        icon: "/images/icons/nextjs.png",
+        description: "The React Framework for Production."
+    },
+    {
+        name: "Tailwind CSS",
+        icon: "/images/icons/tailwindcss.png",
+        description: "Utility-first CSS framework."
+    },
+  
+    {
+        name: "MongoDB",
+        icon: "/images/icons/mongodb.svg",
+        description: "NoSQL database program."
+    },
+    {
+        name: "Firebase",
+        icon: "/images/icons/firebasee.png",
+        description: "Platform for developing web and mobile apps."
+    },
+    {
         name: "HTML",
         icon: "/images/icons/htmlll.png",
         description: "Standard markup language for Web pages."
@@ -17,41 +53,8 @@ const technologies = [
         icon: "/images/icons/js.png",
         description: "High-level, interpreted programming language."
     },
-    {
-        name: "TypeScript",
-        icon: "/images/icons/Typescript_logo_2020.svg.png",
-        description: "Strongly typed superset of JavaScript."
-    },
-    {
-        name: "React",
-        icon: "/images/icons/reactt.png",
-        description: "JavaScript library for building user interfaces."
-    },
-    {
-        name: "Next.js",
-        icon: "/images/icons/nextjs.png",
-        description: "The React Framework for Production."
-    },
-    {
-        name: "Tailwind CSS",
-        icon: "/images/icons/tailwindcss.png",
-        description: "Utility-first CSS framework."
-    },
-    {
-        name: "Node.js",
-        icon: "/images/icons/nodejs.svg",
-        description: "JavaScript runtime built on Chrome's V8."
-    },
-    {
-        name: "MongoDB",
-        icon: "/images/icons/mongodb.svg",
-        description: "NoSQL database program."
-    },
-    {
-        name: "Firebase",
-        icon: "/images/icons/firebasee.png",
-        description: "Platform for developing web and mobile apps."
-    }
+   
+    
 ];
 
 export default function Technologies() {

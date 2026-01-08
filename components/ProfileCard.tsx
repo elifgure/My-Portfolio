@@ -7,12 +7,33 @@ export default function ProfileCard() {
     <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 items-start h-auto lg:h-[680px]">
       {/* Sidebar Navigation */}
       {/* Sidebar Navigation - Desktop */}
-      <div className="hidden lg:flex flex-col justify-center py-18 h-full gap-16 text-gray-500 font-medium text-sm -mx-6">
-        <a href="#technologies" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Technologies</a>
-        <a href="#projects" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Projects</a>
-        <a href="#tools" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Tools</a>
-        <a href="#contact" className="-rotate-90 whitespace-nowrap cursor-pointer hover:text-black transition-colors">Contact</a>
-      </div>
+<div className="
+  hidden lg:flex
+  fixed
+  left-6
+  top-1/2
+  -translate-y-1/2
+  flex-col
+  gap-16
+  text-gray-500
+  font-medium
+  text-sm
+  z-50
+">
+  <a href="#technologies" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+    Technologies
+  </a>
+  <a href="#projects" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+    Projects
+  </a>
+  <a href="#tools" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+    Tools
+  </a>
+  <a href="#contact" className="-rotate-90 whitespace-nowrap hover:text-black transition-colors">
+    Contact
+  </a>
+</div>
+
 
       {/* Mobile Navigation */}
       <div className="flex lg:hidden overflow-x-auto gap-6 pb-4 w-full">
@@ -60,7 +81,7 @@ export default function ProfileCard() {
 
           {/* Text Content */}
           <div className="relative z-20 mt-8">
-            <p className="text-2xl lg:text-4xl font-light text-white">Im,</p>
+            <p className="text-2xl lg:text-4xl font-light text-white">I'm,</p>
             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-snug tracking-tighter mt-1">
               <span className="block">Elif</span>
               <span className="block pl-6">Güre</span>
@@ -78,12 +99,12 @@ export default function ProfileCard() {
 
         {/* CV and Socials (Below Profile Card) */}
         <div className="flex flex-col items-center gap-4 w-full mt-6">
-          <button className="w-full bg-[#0f131b] text-white h-[60px] rounded-[30px] flex items-center justify-center gap-3 font-medium text-xl hover:bg-black/80 transition-colors">
+          <a href="/cv/ElifGure_CV.pdf" className="w-full bg-[#0f131b] text-white h-[60px] rounded-[30px] flex items-center justify-center gap-3 font-medium text-xl hover:bg-black/80 transition-colors">
             Download CV
             <div className="bg-white/20 p-2 rounded-full">
               <Download className="w-5 h-5" />
             </div>
-          </button>
+          </a>
 
           {/* <div className="flex gap-4">
             <a href="#" className="w-[60px] h-[60px] bg-white rounded-full flex items-center justify-center border border-black/10 hover:scale-105 transition-transform">
