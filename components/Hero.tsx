@@ -4,26 +4,40 @@ import ProfileCard from "./ProfileCard";
 
 export default function Hero() {
     return (
-        <section className="py-12 bg-[#F3F4F6] flex justify-center p-4 lg:p-6 font-sans">
-            <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6 w-full max-w-[1280px]">
+        <section className="py-8 md:py-12 bg-[#F3F4F6] flex flex-col items-center p-4 lg:p-6 font-sans">
+            
+            {/* MOBILE HEADER */}
+            <div className="flex lg:hidden flex-col gap-4 w-full max-w-[1280px] mb-8 text-center sm:text-left">
+                <h1 className="text-4xl sm:text-5xl font-black tracking-tighter text-black">
+                    Software Developer<span className="text-[#7E83D4]">.</span>
+                </h1>
+                <p className="text-base sm:text-lg text-black max-w-2xl mx-auto sm:mx-0">
+                    I build modern, responsive web applications using React, Node.js, Next.js and Tailwind CSS.
+                </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-6 lg:gap-8 w-full max-w-[1280px]">
 
                 {/* LEFT PANEL */}
-                <div className="flex flex-col h-full items-center justify-start mt-16 gap-6">
+                <div className="flex flex-col h-full items-center justify-start lg:mt-16 gap-6 w-full">
                     <ProfileCard />
                 </div>
 
                 {/* RIGHT PANEL - BENTO GRID */}
-                <div className="flex flex-col gap-6 pt-2">
+                <div className="flex flex-col gap-6 pt-2 w-full">
 
-                    {/* HEADER */}
-                    <h1 className="text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter text-black">
-                        Software Developer<span className="text-[#7E83D4]">.</span>
-                    </h1>
-                    <p className="text-base text-black">
-                        I build modern, responsive web applications using React, Node.js, Next.js and Tailwind CSS.
-                    </p>
+                    {/* DESKTOP HEADER */}
+                    <div className="hidden lg:flex flex-col gap-6">
+                        <h1 className="text-6xl lg:text-7xl font-black tracking-tighter text-black">
+                            Software Developer<span className="text-[#7E83D4]">.</span>
+                        </h1>
+                        <p className="text-lg text-black max-w-2xl">
+                            I build modern, responsive web applications using React, Node.js, Next.js and Tailwind CSS.
+                        </p>
+                    </div>
+
                     {/* BENTO GRID */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full max-w-4xl">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 w-full max-w-4xl">
 
                         {/* FEATURED CARD (Large) */}
                         <div className="md:row-span-2 relative h-[320px] min-h-[220px] rounded-[24px] overflow-hidden bg-white shadow-sm group">

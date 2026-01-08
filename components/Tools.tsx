@@ -58,7 +58,7 @@ export default function Tools() {
     return (
         <section id="tools" className="min-h-screen bg-[#e0ecff] py-12 lg:py-20 px-4 lg:px-6 font-sans">
             <div className="max-w-[1280px] mx-auto">
-                <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-10 lg:mb-16 text-center">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-6 lg:mb-16 text-center">
                     Tools<span className="text-[#7E83D4]">.</span>
                 </h2>
 
