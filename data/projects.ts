@@ -18,7 +18,7 @@ export const projects = [
     title: "Agency Website",
     description: "A fully responsive agency website developed using Next.js, React, and Tailwind CSS. Features dynamic project listings, blog pages, contact integration, and a scalable MongoDB backend.",
     tech: ["Nextjs", "Tailwind", "React", "MongoDB"],
-    image: "/images/projects/agency.png",
+    image: "/images/projects/agency1.png",
   },{
     id: 4,
     title: "Online Bookshop - Microservices",
