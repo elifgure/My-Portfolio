@@ -15,10 +15,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: "To-Do List",
-    description: "Simple task manager with CRUD features.",
-    tech: ["TypeScript", "Tailwind", "React"],
-    image: "/images/projects/todo.png",
+    title: "Agency Website",
+    description: "A fully responsive agency website developed using Next.js, React, and Tailwind CSS. Features dynamic project listings, blog pages, contact integration, and a scalable MongoDB backend.",
+    tech: ["Nextjs", "Tailwind", "React", "MongoDB"],
+    image: "/images/projects/agency.png",
   },{
     id: 4,
     title: "Online Bookshop - Microservices",
